@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const FormField = ({
   labelName,
@@ -12,18 +12,18 @@ const FormField = ({
 }) => {
   return (
     <div>
-      <div className="flex items-center gap-2 mb-2">
+      <div className='flex items-center gap-2 mb-2'>
         <label
           htmlFor={name}
-          className="block text-sm font-medium text-gray-900"
+          className='block text-md font-medium text-gray-900'
         >
           {labelName}
         </label>
         {isSurpriseMe && (
           <button
-            type="button"
+            type='button'
             onClick={handleSurpriseMe}
-            className="font-semibold text-xs bg-[#cbcbdf] py-1 px-2 rounded-[5px] text-black"
+            className='font-semibold text-xs bg-[#cbcbdf] py-1 px-2 rounded-[5px] text-black'
           >
             Surprise Me
           </button>
@@ -37,7 +37,7 @@ const FormField = ({
         placeholder={placeholder}
         onChange={handleChange}
         required
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focus:rounded-[#4649ff] outline-none block w-full p-3"
+        className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focus:rounded-[#4649ff] outline-none block w-full p-3'
       />
     </div>
   );
